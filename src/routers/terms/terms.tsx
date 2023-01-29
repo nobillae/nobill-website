@@ -9,7 +9,7 @@ function Terms() {
   return (
     <div className='h-full'>
       <Header />
-      <div className='p-4 lg:p-12 termsContainer lg:max-w-7xl lg:m-auto' style={{backgroundImage:BG}}>
+      <div className='p-4 lg:p-12 termsContainer lg:max-w-7xl lg:m-auto ' style={{backgroundImage:BG}}>
         <p className='text-xl mt-9 font-medium'>Terms & Conditions</p>
         <p className='text-gray-400'>last updated on Jan 6, 2023</p>
         <br />
