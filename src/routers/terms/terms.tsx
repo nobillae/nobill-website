@@ -1,8 +1,8 @@
 import { Footer } from '../../components/footer'
 import { Header } from '../../components/header'
 import C7 from './images/c_7.svg'
-import BG from './images/Web_T&C.svg'
 import StampBG from './images/stamp.svg'
+import BG from './images/Web_T&C.svg'
 import './index.css'
 
 function Terms() {

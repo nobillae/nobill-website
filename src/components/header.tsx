@@ -1,4 +1,3 @@
-import React from 'react'
 import NoBillLogo from './images/no-bill-logo.svg'
 
 export function Header() {

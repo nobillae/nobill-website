@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import { Footer } from '../../components/footer'
 import { Header } from '../../components/header'
-import './style.css'
 import C1 from './images/c_1.png'
 import C2 from './images/c_2.png'
 import C3 from './images/c_3.png'
 import C4 from './images/c_4.png'
 import C7 from './images/c_7.svg'
+import './style.css'
 
 function Customer() {
   return (

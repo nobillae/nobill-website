@@ -1,8 +1,7 @@
-import React from 'react'
-import NoBillLogo from './images/no-bill-logo.svg'
-import Twitter from './images/twitter.svg'
 import Facebook from './images/facebook.svg'
 import Instagram from './images/instagram.svg'
+import NoBillLogo from './images/no-bill-logo.svg'
+import Twitter from './images/twitter.svg'
 export function Footer() {
   return (
     <div>
