@@ -7,7 +7,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-width: 100%;
+  width: 100%;
   color-scheme: light dark;
   color: #252241;
   background-color: #242424;
@@ -35,7 +35,7 @@ body {
 }
 
 #root {
-  width:100%;
+  width: 100%;
 }
 
 h1 {
