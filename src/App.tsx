@@ -7,7 +7,7 @@ import Home from './routers/home/home'
 function App() {
   return (
     <div className="h-full">
-      <BrowserRouter basename='nobill-website'>
+      <BrowserRouter>
         <Routers/>
       </BrowserRouter>
     </div>
