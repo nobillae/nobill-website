@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Facebook from './images/facebook.svg'
 import Instagram from './images/instagram.svg'
 import NoBillLogo from './images/no-bill-logo.svg'
@@ -30,7 +31,7 @@ export function Footer() {
       </div>
       <div className='mt-6 text-xs flex justify-between'>
         <span className='t'>©2023 nobill.io . All rights reserved</span>
-        <span>Terms and Conditions</span>
+        <Link to='/terms-condition'>Terms and Conditions</Link>
       </div>
     </div>
   )

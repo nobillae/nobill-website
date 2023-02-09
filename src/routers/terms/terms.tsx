@@ -9,22 +9,30 @@ function Terms() {
   return (
     <div className='h-full'>
       <Header />
-      <div className='p-4 lg:p-12 termsContainer lg:max-w-7xl lg:m-auto ' style={{backgroundImage:BG}}>
+      <div
+        className='p-4 lg:p-12 termsContainer lg:max-w-7xl lg:m-auto '
+        style={{ backgroundImage: BG }}
+      >
         <p className='text-xl mt-9 font-medium'>Terms & Conditions</p>
         <p className='text-gray-400'>last updated on Jan 6, 2023</p>
         <br />
         <div className='text-xs shadow-xl leading-5 px-4 py-10 lg:px-8 bg-white lg:py-0 font-medium rounded-lg '>
           <p className='flex relative'>
-            <span className='self-end'>This Agreement (“Agreement”) is entered between NoBill Technologies FZ-LLC having its
-            registered office at In5 Tech, HD 14B, Dubai, through its website www.nobill.io, and
-            'You' as the User on the website. The terms such as 'Company', 'Platform', and 'NoBill'
-            shall be used in reference to the Platform, and the terms such as 'You', and
-            'Application Developers' shall be used in reference to the User of the website.
-            <br />
-            <br />
-            <br />
+            <span className='self-end'>
+              This Agreement (“Agreement”) is entered between NoBill Technologies FZ-LLC having its
+              registered office at In5 Tech, HD 14B, Dubai, through its website www.nobill.io, and
+              'You' as the User on the website. The terms such as 'Company', 'Platform', and
+              'NoBill' shall be used in reference to the Platform, and the terms such as 'You', and
+              'Application Developers' shall be used in reference to the User of the website.
+              <br />
+              <br />
+              <br />
             </span>
-            <img src={StampBG} alt="stamp" className='absolute lg:relative -top-20 -right-6 lg:-top-12 lg:-right-10 w-20 lg:w-30 lg:w-40' />
+            <img
+              src={StampBG}
+              alt='stamp'
+              className='absolute lg:relative -top-20 -right-6 lg:-top-12 lg:-right-10 w-20 lg:w-30 lg:w-40'
+            />
           </p>
           <p className='text-sm font-bold'>
             NOW, THEREFORE, IN CONSIDERATION OF THE PROMISES AND MUTUAL COVENANTS SET FORTH HEREIN,
@@ -626,6 +634,8 @@ function Terms() {
               22.1. In case there are any updates to the terms and conditions, the Developers will
               be notified through the app and the Portal and their consent will be recorded.
             </p>
+            <br />
+            <br />
           </section>
         </div>
         <br />
@@ -635,13 +645,21 @@ function Terms() {
           <br />
           <div className='flex gap-x-3'>
             <img src={C7} alt='email' />
-            <span>help@nobill.io</span>
+            <a
+              target='_blank'
+              className='text-white hover:text-gray-300'
+              href='mailto:help@nobill.io'
+            >
+              help@nobill.io
+            </a>
           </div>
         </div>
       </div>
       <div className='px-6 py-10 bg-[#F4F3F5] '>
         <br />
-        <Footer />
+        <div className='lg:max-w-7xl lg:m-auto'>
+          <Footer />
+        </div>
       </div>
     </div>
   )

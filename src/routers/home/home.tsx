@@ -25,7 +25,7 @@ import './index.css'
 function Home() {
   return (
     <div className='w-full'>
-      <div className='h-full'>
+      <div className='h-full px-8 lg:px-0'>
         <Header />
         <br />
         <br />
@@ -40,7 +40,10 @@ function Home() {
                 Smart Digital Receipts sent to your phone.
               </p>
               <p className='flex items-center justify-center mt-4 text-center lg:justify-start'>
-                <Link to='/contact-us' className='px-5 py-2 text-white bg-green rounded-3xl'>
+                <Link
+                  to='/customer'
+                  className='px-5 py-2 hover:text-gray-300 text-white bg-green rounded-3xl'
+                >
                   Contact Us
                 </Link>
               </p>
@@ -158,13 +161,16 @@ function Home() {
           <br />
           <br />
           <br />
-
         </div>
         <br />
         <br />
         <div className='lg:bg-[#F1F1F1]'>
           <section className='lg:max-w-7xl lg:m-auto lg:grid lg:grid-cols-2 max-h-[478px]'>
-            <img src={Impressive} alt='Impressive' className='w-full lg:flex-1 relative bottom-[120px]' />
+            <img
+              src={Impressive}
+              alt='Impressive'
+              className='w-full lg:flex-1 relative bottom-[120px]'
+            />
             <p className='text-3xl text-shakingBlack font-bold lg:flex lg:items-center lg:ml-8'>
               Impressive <br />
               Loyalty & Reward
@@ -202,7 +208,10 @@ function Home() {
             <p className='text-3xl text-shakingBlack font-bold'>Get started today</p>
             <br />
             <br />
-            <Link to='/contact-us' className='px-5 py-2 text-white bg-green rounded-3xl'>
+            <Link
+              to='/customer'
+              className='px-5 py-2 text-white hover:text-gray-300 bg-green rounded-3xl'
+            >
               Contact Us
             </Link>
             <br />
