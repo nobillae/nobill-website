@@ -1,11 +1,18 @@
-
-.receipt-container{
-	background-image: url(./images/Intersection.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	/* background-position-y: -220px; */
+.receipt-container {
+  background-image: url(./images/Intersection.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-position-y: -220px; */
 }
 
-.container-2{
-	background-image: url(./images/Web_Business_Loyalty.svg);
+.container-2 {
+  background-image: url(./images/Web_Business_Loyalty.svg);
+  background-size: cover;
+}
+.container-1 {
+  background-image: url(./images/home-bg.svg);
+  background-position-y: 140px;
+  background-repeat: no-repeat;
+  background-size: contain;
+	@apply md:bg-none;
 }

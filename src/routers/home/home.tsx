@@ -25,18 +25,19 @@ import './index.css'
 function Home() {
   return (
     <div className='w-full'>
-      <div className='h-full px-8 lg:px-0'>
+      <div className='h-full px-6 lg:px-0'>
         <Header />
         <br />
-        <br />
-        <div>
-          <section className='flex lg:max-w-7xl lg:m-auto'>
-            <div className='lg:flex-1 lg:pl-12 lg:flex lg:justify-center  lg:flex-col'>
-              <p className='text-xl font-bold text-center lg:text-left mt-9'>
+        <div className='container-1  -mx-6 lg:flex lg:max-w-7xl lg:m-auto'>
+          <section className='mx-6 lg:mx-0 lg:flex-1 '>
+            <div className='lg:flex-1 lg:pl-12 lg:flex lg:justify-center  lg:flex-col lg:pt-8'>
+              <p className='text-xl font-bold text-center lg:text-left mt-9 lg:text-3xl'>
                 Say NO to Paper Receipts for
               </p>
-              <p className='font-bold text-center lg:text-left text-8xl text-green'>GOOD</p>
-              <p className='text-xs text-center lg:text-left'>
+              <p className='font-bold text-center lg:text-left text-8xl text-green lg:text-9xl'>
+                GOOD
+              </p>
+              <p className='text-xs text-center lg:text-left lg:text-md'>
                 Smart Digital Receipts sent to your phone.
               </p>
               <p className='flex items-center justify-center mt-4 text-center lg:justify-start'>
@@ -48,8 +49,9 @@ function Home() {
                 </Link>
               </p>
             </div>
-            <div className='lg:flex-1'>
-              {/* <div className='lg:hidden relative w-full h-56'>
+          </section>
+          <div className=' mt-8 w-full lg:flex-1'>
+            {/* <div className='lg:hidden relative w-full h-56'>
             <div className='absolute overflow-clip'>
               <img
                 src={HomeBG}
@@ -58,28 +60,27 @@ function Home() {
               />
             </div>
           </div> */}
-              <div className='h-[214px] lg:h-auto relative receipt-container w-full'>
-                <div className='absolute lg:relative w-full h-[420px] flex lg:h-auto bottom-0 overflow-hidden'>
-                  <img
-                    src={HandHoldingReceiptImg}
-                    alt='hand-holding-receipt'
-                    className='bottom-0 z-20 w-44'
-                  ></img>
-                  <img
-                    src={ReceiptImg}
-                    alt='receipt'
-                    className='w-56 ml-4 left-[164px] bottom-0 z-30'
-                  ></img>
-                </div>
+            <div className='h-auto relative receipt-container w-full'>
+              <div className='lg:relative w-full h-[420px] flex lg:h-auto bottom-0 overflow-hidden'>
+                <img
+                  src={HandHoldingReceiptImg}
+                  alt='hand-holding-receipt'
+                  className='bottom-0 w-44 z-20'
+                ></img>
+                <img
+                  src={ReceiptImg}
+                  alt='receipt'
+                  className='w-56 -ml-4 left-[124px] bottom-0 z-30'
+                ></img>
               </div>
             </div>
-          </section>
+          </div>
         </div>
         <div className='lg:bg-[#F1F1F1]'>
           <section className='px-6 py-10  lg:max-w-7xl lg:m-auto'>
-            <p className='text-2xl font-bold'>Advantages of Smart Receipt</p>
-            <br />
-            <div className='flex flex-row-reverse justify-center'>
+            <p className='text-2xl font-bold lg:text-3xl'>Advantages of Smart Receipt</p>
+            <br className='lg:hidden' />
+            <div className='flex md:-mt-36 justify-center flex-col md:flex-row-reverse gap-y-6 items-center'>
               <div className='grid items-center grid-cols-2 mt-6 text-sm font-bold text-center justify-items-center gap-y-6'>
                 <div>
                   <img src={Advantages_01} alt='Advantages_01' className='inline' />
@@ -106,7 +107,7 @@ function Home() {
                   <p className='mt-2'>Automatic Reward Points Earnings</p>
                 </div>
               </div>
-              <div className='lg:mr-40'>
+              <div className='lg:mr-40 lg:relative lg:-bottom-40'>
                 <img src={G_1} className='p-4 w-80 ' />
               </div>
             </div>
@@ -114,12 +115,17 @@ function Home() {
         </div>
         <div>
           <section className='lg:max-w-7xl lg:m-auto'>
-            <div className='flex flex-row justify-end gap-x-6 p-4'>
+            <div className='flex flex-row md:justify-end gap-x-6 p-4 justify-center'>
               <img src={GooglePlay} alt='google_play' className='w-32' />
               <img src={AppStore} alt='app_store' className='w-32' />
             </div>
-            <p className='font-bold text-2xl p-4'>
-              Support UAE's Net- Zero & Paperless Strategy -{' '}
+          </section>
+        </div>
+        <div>
+          <section className='lg:max-w-7xl lg:mx-auto lg:mt-20'>
+            <p className='font-bold text-2xl p-4 lg:text-3xl'>
+              Support UAE's Net- Zero
+              <br className='hidden lg:block' /> & Paperless Strategy -{' '}
               <span className='text-green'>Go Green</span>
             </p>
             <div className='grid items-end grid-cols-2 lg:grid-cols-6 mt-6 text-sm text-center'>
@@ -165,13 +171,13 @@ function Home() {
         <br />
         <br />
         <div className='lg:bg-[#F1F1F1]'>
-          <section className='lg:max-w-7xl lg:m-auto lg:grid lg:grid-cols-2 max-h-[478px]'>
+          <section className='lg:max-w-7xl lg:mx-auto lg:flex'>
             <img
               src={Impressive}
               alt='Impressive'
-              className='w-full lg:flex-1 relative bottom-[120px]'
+              className='w-full lg:flex-1 relative bottom-[120px] lg:max-w-[650px]'
             />
-            <p className='text-3xl text-shakingBlack font-bold lg:flex lg:items-center lg:ml-8'>
+            <p className='text-3xl text-shakingBlack font-bold lg:flex lg:items-center lg:ml-8 lg:bottom-[60px] lg:relative'>
               Impressive <br />
               Loyalty & Reward
               <br />
@@ -183,7 +189,7 @@ function Home() {
           <br />
           <br />
           <br />
-          <section className='lg:flex container-2 lg:max-w-7xl lg:m-auto max-h-96'>
+          <section className='lg:flex  lg:max-w-7xl lg:m-auto'>
             <div className='lg:flex-1 lg:pl-14'>
               <img src={NoBill_S} />
               <p className='text-3xl text-shakingBlack font-bold'>
@@ -196,7 +202,7 @@ function Home() {
                 <img src={AppStore} alt='app_store' className='w-32' />
               </div>
             </div>
-            <div className='flex-1'>
+            <div className='flex-1 container-2 -mx-6 mt-8'>
               <img src={G_3} className='max-w-none w-full relative right-12'></img>
             </div>
           </section>
@@ -214,6 +220,7 @@ function Home() {
             >
               Contact Us
             </Link>
+            <br />
             <br />
             <br />
             <hr className='border-dashed border-t border-[#252241] opacity-30 h-0' />
