@@ -21,12 +21,15 @@ import HandHoldingReceiptImg from './images/hand-holding-receipt.png'
 import Impressive from './images/impressive.png'
 import NoBill_S from './images/no_bill_s.svg'
 import ReceiptImg from './images/receipt.png'
+import C7 from '../customer/images/c_7.svg'
+
+import { HashLink } from 'react-router-hash-link'
 import './index.css'
 function Home() {
   return (
     <div className='w-full'>
       <div className='h-full px-6 lg:px-0'>
-        <Header />
+        <Header customer={false} />
         <br />
         <div className='container-1  -mx-6 lg:flex lg:max-w-7xl lg:m-auto'>
           <section className='mx-6 lg:mx-0 lg:flex-1 '>
@@ -41,12 +44,9 @@ function Home() {
                 Smart Digital Receipts sent to your phone.
               </p>
               <p className='flex items-center justify-center mt-4 text-center lg:justify-start'>
-                <Link
-                  to='/customer'
-                  className='px-5 py-2 hover:text-gray-300 text-white bg-green rounded-3xl'
-                >
+                <HashLink to='#get_in_touch' smooth className='link-lg'>
                   Contact Us
-                </Link>
+                </HashLink>
               </p>
             </div>
           </section>
@@ -115,7 +115,7 @@ function Home() {
         </div>
         <div>
           <section className='lg:max-w-7xl lg:m-auto'>
-            <div className='flex flex-row md:justify-end gap-x-6 p-4 justify-center'>
+            <div className='flex flex-row md:justify-end gap-x-6 pt-6 justify-center md:pr-80'>
               <img src={GooglePlay} alt='google_play' className='w-32' />
               <img src={AppStore} alt='app_store' className='w-32' />
             </div>
@@ -209,22 +209,26 @@ function Home() {
         </div>
         <div className='lg:bg-[#F1F1F1]'>
           <section className='lg:max-w-7xl lg:m-auto'>
-            <br />
-            <br />
-            <p className='text-3xl text-shakingBlack font-bold'>Get started today</p>
-            <br />
-            <br />
-            <Link
-              to='/customer'
-              className='px-5 py-2 text-white hover:text-gray-300 bg-green rounded-3xl'
-            >
-              Contact Us
-            </Link>
-            <br />
+            <div id='get_in_touch' className=' text-white'>
+              <div className='lg:max-w-7xl lg:m-auto bg-[#19172E] px-6 py-10  rounded-tr-lg rounded-tl-lg'>
+                <p className='text-3xl font-bold'>Get started today</p>
+                <br />
+                <div className='flex gap-x-3'>
+                  <img src={C7} alt='email' />
+                  <a
+                    target='_blank'
+                    className='text-green hover:text-green/60'
+                    href='mailto:help@nobill.io'
+                  >
+                    help@nobill.io
+                  </a>
+                </div>
+              </div>
+            </div>
             <br />
             <br />
             <hr className='border-dashed border-t border-[#252241] opacity-30 h-0' />
-            <Footer />
+            <Footer isCustomer={false} />
             <br />
             <br />
           </section>

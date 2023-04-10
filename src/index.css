@@ -65,11 +65,38 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #ffffff;
+    --root-primary-color: #213547;
+    --root-primary-color-h: 164.23;
+    --root-primary-color-s: 100%;
+    --root-primary-color-l: 30.59%;
+    --primary-color-hsl: var(--root-primary-color-h), var(--root-primary-color-s),
+      var(--root-primary-color-l);
+
+    --primary-color: hsl(var(--primary-color-hsl));
+    --primary-color-10: hsla(var(--primary-color-hsl), 0.1);
+    --primary-color-20: hsla(var(--primary-color-hsl), 0.2);
+    --primary-color-30: hsla(var(--primary-color-hsl), 0.3);
+    --primary-color-40: hsla(var(--primary-color-hsl), 0.4);
+    --primary-color-50: hsla(var(--primary-color-hsl), 0.5);
+    --primary-color-60: hsla(var(--primary-color-hsl), 0.6);
+    --primary-color-70: hsla(var(--primary-color-hsl), 0.7);
+    --primary-color-80: hsla(var(--primary-color-hsl), 0.8);
+    --primary-color-90: hsla(var(--primary-color-hsl), 0.9);
+  }
+  a{
+    font-weight: normal;
   }
   a:hover {
     color: #213547;
   }
   button {
     background-color: #f9f9f9;
+  }
+  .link-sm{
+    @apply px-5 py-2 ml-2 text-xs text-white transition-colors rounded-2xl bg-green hover:bg-green/70 hover:text-white;
+ 
+  }
+  .link-lg {
+    @apply px-5 py-2 ml-2  text-white transition-colors rounded-3xl bg-green hover:bg-green/70 hover:text-white;
   }
 }

@@ -8,7 +8,7 @@ import './index.css'
 function Terms() {
   return (
     <div className='h-full'>
-      <Header />
+      <Header customer={false} />
       <div
         className='p-4 lg:p-12 termsContainer lg:max-w-7xl lg:m-auto '
         style={{ backgroundImage: BG }}
@@ -658,7 +658,7 @@ function Terms() {
       <div className='px-6 py-10 bg-[#F4F3F5] '>
         <br />
         <div className='lg:max-w-7xl lg:m-auto'>
-          <Footer />
+          <Footer isCustomer={false} />
         </div>
       </div>
     </div>
