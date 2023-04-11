@@ -25,7 +25,7 @@ export function Footer({ isCustomer }: { isCustomer: boolean } = { isCustomer: f
             Developer APIs
           </a>
           <div>
-            <a href='#' className='text-xs'>
+            <a href='/our-story' className='text-xs'>
               Our Story
             </a>
             <br />
