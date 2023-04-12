@@ -1,0 +1,7 @@
+.bg-3 {
+  background-image: url(./images/Group_5.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 30px;
+  background-size: 166px 200px;
+  @apply lg:bg-none;
+}

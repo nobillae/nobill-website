@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, isRouteErrorResponse, useRouteError } from 'react-router-dom'
 import { Footer } from '../../components/footer'
 import { Header } from '../../components/header'
 import Advantages_01 from './images/advantages-01.svg'
@@ -25,7 +25,9 @@ import C7 from '../customer/images/c_7.svg'
 
 import { HashLink } from 'react-router-hash-link'
 import './index.css'
-function Home() {
+export function Component() {
+  console.log('component');
+  
   return (
     <div className='w-full'>
       <div className='h-full px-6 lg:px-0'>
@@ -238,4 +240,22 @@ function Home() {
   )
 }
 
-export default Home
+export function ErrorBoundary() {
+  let error = useRouteError();
+  return isRouteErrorResponse(error) ? (
+    <h1>
+      {error.status} {error.statusText}
+    </h1>
+  ) : (
+    <h1>{}</h1>
+  );
+}
+
+export async function loader() {
+  // let data = await fetchData(request);
+  // return json(data);
+  return null
+}
+
+// If you want to customize the component display name in React dev tools:
+ErrorBoundary.displayName = "SampleErrorBoundary";

@@ -45,7 +45,7 @@ export function Footer({ isCustomer }: { isCustomer: boolean } = { isCustomer: f
       </div>
       <div className='mt-6 text-xs flex justify-between'>
         <span className='t'>©2023 nobill.io . All rights reserved</span>
-        <a
+        {/* <a
           href={
             isCustomer
               ? '/TERMS AND CONDITIONS-NoBill (Merchant) .pdf'
@@ -54,7 +54,8 @@ export function Footer({ isCustomer }: { isCustomer: boolean } = { isCustomer: f
           target='_blank'
         >
           Terms and Conditions
-        </a>
+        </a> */}
+        <Link to='/terms-condition'>Terms and Conditions</Link>
       </div>
     </div>
   )

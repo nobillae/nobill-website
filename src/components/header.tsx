@@ -11,12 +11,12 @@ export function Header({ customer }: { customer: boolean }): JSX.Element {
         <span className='ml-auto text-xs cursor-pointer'>
           {customer ? <Link to='/'>For Users</Link> : <Link to='/customer'>For Businesses</Link>}
         </span>
-        <a
+        {/* <a
           href='https://b.nobill.io'
           className='link-sm'
         >
           Get a Demo
-        </a>
+        </a> */}
       </div>
     </div>
   )
