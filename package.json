@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "vite-plugin-history-api-fallback": "^0.0.1"
   },
   "devDependencies": {
     "@honkhonk/vite-plugin-svgr": "^1.1.0",
