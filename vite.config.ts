@@ -1,18 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr'
-import HistoryApiFallback from 'vite-plugin-history-api-fallback'
 
+import HtmlExtFallbackPlugin from './build/plugins/html-ext-fallback'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    HtmlExtFallbackPlugin({ rootDir: __dirname }),
     svgr(),
     react(),
-    HistoryApiFallback({
-      DEBUG: true,
-      rewrites: [
-        { from: /^\/.*$/, to: '/index.html' },
-      ],
-    }),
   ],
 })
