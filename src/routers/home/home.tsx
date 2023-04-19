@@ -63,7 +63,7 @@ export function Component() {
             </div>
           </div> */}
             <div className='h-auto relative receipt-container w-full'>
-              <div className='lg:relative w-full h-[420px] flex lg:h-auto bottom-0 overflow-hidden'>
+              <div className='lg:relative w-full h-[420px] flex justify-center lg:h-auto bottom-0 overflow-hidden'>
                 <img
                   src={HandHoldingReceiptImg}
                   alt='hand-holding-receipt'
@@ -82,7 +82,7 @@ export function Component() {
           <section className='px-6 py-10  lg:max-w-7xl lg:m-auto'>
             <p className='text-2xl font-bold lg:text-3xl'>Advantages of Smart Receipt</p>
             <br className='lg:hidden' />
-            <div className='flex md:-mt-36 justify-center flex-col md:flex-row-reverse gap-y-6 items-center'>
+            <div className='flex lg:-mt-36 justify-center flex-col lg:flex-row-reverse gap-y-6 items-center'>
               <div className='grid items-center grid-cols-2 mt-6 text-sm font-bold text-center justify-items-center gap-y-6'>
                 <div>
                   <img src={Advantages_01} alt='Advantages_01' className='inline' />
@@ -117,7 +117,7 @@ export function Component() {
         </div>
         <div>
           <section className='lg:max-w-7xl lg:m-auto'>
-            <div className='flex flex-row md:justify-end gap-x-6 pt-6 justify-center md:pr-80'>
+            <div className='flex flex-row lg:justify-end gap-x-6 pt-6 justify-center lg:pr-80'>
               <img src={GooglePlay} alt='google_play' className='w-32' />
               <img src={AppStore} alt='app_store' className='w-32' />
             </div>

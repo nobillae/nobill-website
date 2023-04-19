@@ -55,10 +55,12 @@ function OurStory() {
                 <p className='text-base font-bold'>Nitin Gupta</p>
                 <p className='text-sm'>Founder & CEO</p>
                 <p className='text-xs flex items-center'>
-                  <span className='text-green font-medium text-xl h-8 mr-1'>&#8250;</span>Previously
-                  - Co-founded Texcent
+                  <span className='text-green font-medium text-xl h-8 mr-1 point'>&#8250;</span>
+                  Previously - Co-founded Texcent
                 </p>
-                <img src={G11} className='w-6 mt-4' alt="g_11" />
+                <a href='https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAACTpRUUBcY_UG8RK-qb5V45Mm6VjKiTUKqo&keywords=sean%20wang&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=9116d73e-67da-4157-a9cd-324d029caebb&sid=_v*'>
+                  <img src={G11} className='w-6 mt-4 cursor-pointer' alt='g_11' />
+                </a>
               </div>
             </div>
             <div className='p-6 bg-green/5 md:gap-x-4 flex justify-center md:flex-row md:flex-1 md:justify-start items-center flex-row-reverse md:bg-white'>
@@ -70,7 +72,7 @@ function OurStory() {
                   <span className='text-green font-medium text-xl h-8 mr-1'>&#8250;</span>{' '}
                   Previously - Founder & CTO PayBy
                 </p>
-                <img src={G11} alt="g_11" className='w-6 mt-4'/>
+                <img src={G11} alt='g_11' className='w-6 mt-4' />
               </div>
             </div>
           </div>
@@ -102,25 +104,25 @@ function OurStory() {
             and Determination
           </p>
           <p className='text-sm text-white md:text-base w-3/4'>
-            Their continued efforts led to the creation of NoBill, a technology company to reimagine
-            paper receipts for a sustainable future, enabling retailers with powerful e-commerce
-            software to bridge the technological gap between online and offline purchases. NoBill
-            offers a convenient and innovative smart receipt solution for retailers and customers by
-            simplifying purchases and keeping receipts organized and easily accessible.
+            With innovation and determination, NoBill is redefining paper receipts to reduce the
+            negative impact on the environment. By offering smart receipts, they aim to create a
+            more viable solution that minimizes waste and conserves natural resources. It is worth
+            mentioning that the excessive use of non-recyclable thermal paper bills has a
+            significant effect on the environment, including deforestation, water consumption, and
+            oil use.
           </p>
         </div>
       </div>
       <div className='md:max-w-7xl md:m-auto'>
         <img src={G3} alt='c_3_full' className='w-full hidden md:block' />
-				<img src={G10} alt="" className='md:hidden'/>
+        <img src={G10} alt='' className='md:hidden' />
         <img className='md:hidden' src={G4}></img>
         <p className='text-center text-sm m-6 md:text-lg md:w-2/4 md:mx-auto md:mt-9'>
           At NoBill, <span className='text-green font-medium'>Sean and Nitin</span> are proud of
-          what they've accomplished so far, and they're excited to see the positiveAt NoBill, Sean
-          and Nitin are proud of what they've effects their innovative solution will have on the
-          world for years to come.
+          what they've accomplished so far, and they're excited to see the positive effects their
+          innovative solution will have on the world for years to come.
         </p>
-				<img src={G9} alt="g_9" className='w-2/3 md:w-1/3 mx-auto p-6'/>
+        <img src={G9} alt='g_9' className='w-2/3 md:w-1/3 mx-auto p-6' />
       </div>
       <br />
       <div className='px-6 py-10 bg-[#F4F3F5] '>
